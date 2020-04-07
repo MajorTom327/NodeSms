@@ -1,0 +1,17 @@
+# @host = localhost:3000
+@host = 192.168.1.21:3000
+@phone = +33700000000
+
+###
+GET /health/ping HTTP/1.1
+Host: {{host}}
+
+###
+POST /sms/send HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+
+{
+  "phone": "{{phone}}",
+  "message": "Hello World !"
+}

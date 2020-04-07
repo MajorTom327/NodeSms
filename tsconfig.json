@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2017",
+    "outDir": "./dist",
+    "baseUrl": "./src"
+  },
+  "paths": {
+    /* Support absolute /imports/* with a leading '/' */
+    "/*": ["*"]
+    // "@ui/*": ["/imports/ui/*"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
